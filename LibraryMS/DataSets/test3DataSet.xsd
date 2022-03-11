@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="test3DataSet" targetNamespace="http://tempuri.org/test3DataSet.xsd" xmlns:mstns="http://tempuri.org/test3DataSet.xsd" xmlns="http://tempuri.org/test3DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="test3ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="test3ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LibraryMS.My.MySettings.GlobalReference.Default.test3ConnectionString" Provider="MySql.Data.MySqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="test3ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="test3ConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.LibraryMS.My.MySettings.GlobalReference.Default.test3ConnectionString1" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="booktblTableAdapter" GeneratorDataComponentClassName="booktblTableAdapter" Name="booktbl" UserDataComponentName="booktblTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="test3ConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        booktbl.bk_ISBN, booktbl.bktitle, booktbl.bkedition, booktbl.bkauthor, booktbl.bkpublisher, booktbl.bkcopies, booktbl.bk_totalcopies, booktbl.bk_cost, booktbl.bk_remarks, booktbl.bk_publishdate, categorytbl.category_name
+FROM            booktbl INNER JOIN
+                         categorytbl ON booktbl.bk_categoryid = categorytbl.category_id</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="bktitle" DataSetColumn="bktitle" />
+              <Mapping SourceColumn="bkedition" DataSetColumn="bkedition" />
+              <Mapping SourceColumn="bkauthor" DataSetColumn="bkauthor" />
+              <Mapping SourceColumn="bkpublisher" DataSetColumn="bkpublisher" />
+              <Mapping SourceColumn="bkcopies" DataSetColumn="bkcopies" />
+              <Mapping SourceColumn="bk_totalcopies" DataSetColumn="bk_totalcopies" />
+              <Mapping SourceColumn="bk_cost" DataSetColumn="bk_cost" />
+              <Mapping SourceColumn="bk_remarks" DataSetColumn="bk_remarks" />
+              <Mapping SourceColumn="bk_publishdate" DataSetColumn="bk_publishdate" />
+              <Mapping SourceColumn="category_name" DataSetColumn="category_name" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="test3ConnectionString (MySettings)" DbObjectName="test3.booktbl" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBooks2" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBooks2" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBooks2">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT    Distinct    bk_ISBN, bktitle, bkedition, bkauthor, bkpublisher, bkcopies, bk_totalcopies, bk_cost, bk_remarks, bk_publishdate, bk_categoryid
+FROM            booktbl
+WHERE        (bk_ISBN = @Param1)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="bk_ISBN" DataSourceName="test3.booktbl" DataTypeServer="char(13)(13)" DbType="String" Direction="Input" ParameterName="@Param1" Precision="0" ProviderType="String" Scale="0" Size="13" SourceColumn="bk_ISBN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="booktbl1TableAdapter" GeneratorDataComponentClassName="booktbl1TableAdapter" Name="booktbl1" UserDataComponentName="booktbl1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="test3ConnectionString (MySettings)" DbObjectName="test3.booktbl" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBooks" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="FillBooks" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="FillBooks">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DISTINCT bk_ISBN
+FROM            booktbl</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="bk_ISBN" DataSetColumn="bk_ISBN1" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="categorytblTableAdapter" GeneratorDataComponentClassName="categorytblTableAdapter" Name="categorytbl" UserDataComponentName="categorytblTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="test3ConnectionString1 (MySettings)" DbObjectName="test3.categorytbl" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `categorytbl` WHERE ((`category_id` = @p1) AND (`category_name` = @p2))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="category_id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="category_name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `categorytbl` (`category_id`, `category_name`) VALUES (@p1, @p2)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="category_id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="category_name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        category_id, category_name
+FROM            categorytbl</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `categorytbl` SET `category_id` = @p1, `category_name` = @p2 WHERE ((`category_id` = @p3) AND (`category_name` = @p4))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="category_id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="category_name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="category_id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="category_name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="category_id" DataSetColumn="category_id" />
+              <Mapping SourceColumn="category_name" DataSetColumn="category_name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="test3DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="test3DataSet" msprop:Generator_UserDSName="test3DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="booktbl" msprop:Generator_TableClassName="booktblDataTable" msprop:Generator_TableVarName="tablebooktbl" msprop:Generator_TablePropName="booktbl" msprop:Generator_RowDeletingName="booktblRowDeleting" msprop:Generator_RowChangingName="booktblRowChanging" msprop:Generator_RowEvHandlerName="booktblRowChangeEventHandler" msprop:Generator_RowDeletedName="booktblRowDeleted" msprop:Generator_UserTableName="booktbl" msprop:Generator_RowChangedName="booktblRowChanged" msprop:Generator_RowEvArgName="booktblRowChangeEvent" msprop:Generator_RowClassName="booktblRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="bk_ISBN" msprop:Generator_ColumnVarNameInTable="columnbk_ISBN" msprop:Generator_ColumnPropNameInRow="bk_ISBN" msprop:Generator_ColumnPropNameInTable="bk_ISBNColumn" msprop:Generator_UserColumnName="bk_ISBN">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bktitle" msprop:Generator_ColumnVarNameInTable="columnbktitle" msprop:Generator_ColumnPropNameInRow="bktitle" msprop:Generator_ColumnPropNameInTable="bktitleColumn" msprop:Generator_UserColumnName="bktitle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bkedition" msprop:Generator_ColumnVarNameInTable="columnbkedition" msprop:Generator_ColumnPropNameInRow="bkedition" msprop:Generator_ColumnPropNameInTable="bkeditionColumn" msprop:Generator_UserColumnName="bkedition">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bkauthor" msprop:Generator_ColumnVarNameInTable="columnbkauthor" msprop:Generator_ColumnPropNameInRow="bkauthor" msprop:Generator_ColumnPropNameInTable="bkauthorColumn" msprop:Generator_UserColumnName="bkauthor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bkpublisher" msprop:Generator_ColumnVarNameInTable="columnbkpublisher" msprop:Generator_ColumnPropNameInRow="bkpublisher" msprop:Generator_ColumnPropNameInTable="bkpublisherColumn" msprop:Generator_UserColumnName="bkpublisher">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bkcopies" msprop:Generator_ColumnVarNameInTable="columnbkcopies" msprop:Generator_ColumnPropNameInRow="bkcopies" msprop:Generator_ColumnPropNameInTable="bkcopiesColumn" msprop:Generator_UserColumnName="bkcopies" type="xs:int" />
+              <xs:element name="bk_totalcopies" msprop:Generator_ColumnVarNameInTable="columnbk_totalcopies" msprop:Generator_ColumnPropNameInRow="bk_totalcopies" msprop:Generator_ColumnPropNameInTable="bk_totalcopiesColumn" msprop:Generator_UserColumnName="bk_totalcopies" type="xs:int" />
+              <xs:element name="bk_cost" msprop:Generator_ColumnVarNameInTable="columnbk_cost" msprop:Generator_ColumnPropNameInRow="bk_cost" msprop:Generator_ColumnPropNameInTable="bk_costColumn" msprop:Generator_UserColumnName="bk_cost" type="xs:decimal" />
+              <xs:element name="bk_remarks" msprop:Generator_ColumnVarNameInTable="columnbk_remarks" msprop:Generator_ColumnPropNameInRow="bk_remarks" msprop:Generator_ColumnPropNameInTable="bk_remarksColumn" msprop:Generator_UserColumnName="bk_remarks">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bk_publishdate" msprop:Generator_ColumnVarNameInTable="columnbk_publishdate" msprop:Generator_ColumnPropNameInRow="bk_publishdate" msprop:Generator_ColumnPropNameInTable="bk_publishdateColumn" msprop:Generator_UserColumnName="bk_publishdate" type="xs:short" />
+              <xs:element name="category_name" msprop:Generator_ColumnVarNameInTable="columncategory_name" msprop:Generator_ColumnPropNameInRow="category_name" msprop:Generator_ColumnPropNameInTable="category_nameColumn" msprop:Generator_UserColumnName="category_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="booktbl1" msprop:Generator_TableClassName="booktbl1DataTable" msprop:Generator_TableVarName="tablebooktbl1" msprop:Generator_RowChangedName="booktbl1RowChanged" msprop:Generator_TablePropName="booktbl1" msprop:Generator_RowDeletingName="booktbl1RowDeleting" msprop:Generator_RowChangingName="booktbl1RowChanging" msprop:Generator_RowEvHandlerName="booktbl1RowChangeEventHandler" msprop:Generator_RowDeletedName="booktbl1RowDeleted" msprop:Generator_RowClassName="booktbl1Row" msprop:Generator_UserTableName="booktbl1" msprop:Generator_RowEvArgName="booktbl1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="bk_ISBN" msprop:Generator_ColumnVarNameInTable="columnbk_ISBN" msprop:Generator_ColumnPropNameInRow="bk_ISBN" msprop:Generator_ColumnPropNameInTable="bk_ISBNColumn" msprop:Generator_UserColumnName="bk_ISBN">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bk_ISBN1" msdata:Caption="bk_ISBN" msprop:Generator_ColumnVarNameInTable="columnbk_ISBN1" msprop:Generator_ColumnPropNameInRow="bk_ISBN1" msprop:Generator_ColumnPropNameInTable="bk_ISBN1Column" msprop:Generator_UserColumnName="bk_ISBN1" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="categorytbl" msprop:Generator_TableClassName="categorytblDataTable" msprop:Generator_TableVarName="tablecategorytbl" msprop:Generator_RowChangedName="categorytblRowChanged" msprop:Generator_TablePropName="categorytbl" msprop:Generator_RowDeletingName="categorytblRowDeleting" msprop:Generator_RowChangingName="categorytblRowChanging" msprop:Generator_RowEvHandlerName="categorytblRowChangeEventHandler" msprop:Generator_RowDeletedName="categorytblRowDeleted" msprop:Generator_RowClassName="categorytblRow" msprop:Generator_UserTableName="categorytbl" msprop:Generator_RowEvArgName="categorytblRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="category_id" msprop:Generator_ColumnVarNameInTable="columncategory_id" msprop:Generator_ColumnPropNameInRow="category_id" msprop:Generator_ColumnPropNameInTable="category_idColumn" msprop:Generator_UserColumnName="category_id" type="xs:int" />
+              <xs:element name="category_name" msprop:Generator_ColumnVarNameInTable="columncategory_name" msprop:Generator_ColumnPropNameInRow="category_name" msprop:Generator_ColumnPropNameInTable="category_nameColumn" msprop:Generator_UserColumnName="category_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="booktblKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:booktbl" />
+      <xs:field xpath="mstns:bk_ISBN" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:booktbl1" />
+      <xs:field xpath="mstns:bk_ISBN" />
+    </xs:unique>
+    <xs:unique name="Constraint2">
+      <xs:selector xpath=".//mstns:booktbl1" />
+      <xs:field xpath="mstns:bk_ISBN1" />
+    </xs:unique>
+    <xs:unique name="categorytbl_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:categorytbl" />
+      <xs:field xpath="mstns:category_id" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="booktbl_booktbl1" msdata:parent="booktbl" msdata:child="booktbl1" msdata:parentkey="bk_ISBN" msdata:childkey="bk_ISBN" msprop:Generator_UserChildTable="booktbl1" msprop:Generator_ChildPropName="Getbooktbl1Rows" msprop:Generator_UserRelationName="booktbl_booktbl1" msprop:Generator_RelationVarName="relationbooktbl_booktbl1" msprop:Generator_UserParentTable="booktbl" msprop:Generator_ParentPropName="booktblRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
