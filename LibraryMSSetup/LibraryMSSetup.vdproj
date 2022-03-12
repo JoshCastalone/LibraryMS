@@ -2199,11 +2199,6 @@
                     "Name" = "8:Microsoft® System CLR Types for SQL Server® 2014 (x86)"
                     "ProductCode" = "8:Microsoft.SqlServer.SQLSysClrTypes.12.0.x86"
                     }
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Visual.C++.14.0.arm64"
-                    {
-                    "Name" = "8:Visual C++ \"14\" Runtime Libraries (ARM64)"
-                    "ProductCode" = "8:Microsoft.Visual.C++.14.0.arm64"
-                    }
                     "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Visual.C++.14.0.x64"
                     {
                     "Name" = "8:Visual C++ \"14\" Runtime Libraries (x64)"
