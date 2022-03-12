@@ -16,6 +16,7 @@ Public Class frmMain
     End Sub
 
     Private Sub EBooksToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EBooksToolStripMenuItem.Click
+        System.IO.Directory.CreateDirectory(Application.StartupPath & "\PDF_Files\")
         frmPDFReader.Show()
     End Sub
 
