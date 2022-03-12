@@ -2194,6 +2194,26 @@
                     "Name" = "8:Microsoft .NET Framework 4.8 (x86 and x64)"
                     "ProductCode" = "8:.NETFramework,Version=v4.8"
                     }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.SqlServer.SQLSysClrTypes.12.0.x86"
+                    {
+                    "Name" = "8:Microsoft® System CLR Types for SQL Server® 2014 (x86)"
+                    "ProductCode" = "8:Microsoft.SqlServer.SQLSysClrTypes.12.0.x86"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Visual.C++.14.0.arm64"
+                    {
+                    "Name" = "8:Visual C++ \"14\" Runtime Libraries (ARM64)"
+                    "ProductCode" = "8:Microsoft.Visual.C++.14.0.arm64"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Visual.C++.14.0.x64"
+                    {
+                    "Name" = "8:Visual C++ \"14\" Runtime Libraries (x64)"
+                    "ProductCode" = "8:Microsoft.Visual.C++.14.0.x64"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Visual.C++.14.0.x86"
+                    {
+                    "Name" = "8:Visual C++ \"14\" Runtime Libraries (x86)"
+                    "ProductCode" = "8:Microsoft.Visual.C++.14.0.x86"
+                    }
                 }
             }
         }
@@ -7218,7 +7238,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:LibraryMSSetup"
         "ProductCode" = "8:{E9B50F12-87EB-4022-A9B9-6810F311546C}"
-        "PackageCode" = "8:{B90679BD-8F4D-4DA4-9FF6-98B1ACA1B80F}"
+        "PackageCode" = "8:{B9B74987-D44F-4B89-8BC1-E8AFF4FA97BC}"
         "UpgradeCode" = "8:{87E3B52E-4CE0-4E2E-9C40-94062592C696}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
