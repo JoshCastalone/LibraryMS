@@ -118,3 +118,13 @@ Public Class frmMain
         frmStudentsList.Show()
     End Sub
 End Class
+
+'I'm already disillusioned
+'I really hate myself
+'I'm not amused at all
+'Why? Why am I dumb?
+'Why am I not productive?
+'Bakit tinatamad na ako mag aral?
+'Nasaan na ang spark?
+'I can feel na sinusubukan ko na lang mag survive, pero wala na akong natututunan...
+'Nakakaumay na :)
