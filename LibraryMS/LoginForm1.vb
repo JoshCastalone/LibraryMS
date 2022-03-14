@@ -58,7 +58,9 @@ Public Class LoginForm1
 
     End Sub
 
-    Private Sub LoginForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class
+
+'Nakasalalay sa ating lahat, politicians and ordinary folks alike, ang hinaharap natin
+'Kaya vote wisely
+'#NationalElection2022
+'https://youtu.be/VrkxGbtJB6E
