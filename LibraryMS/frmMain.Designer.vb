@@ -54,11 +54,10 @@ Partial Class frmMain
         Me.ManageUsersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ManageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BookCategoriesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.StudentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SectionStrandToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GradeLevelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
@@ -224,57 +223,76 @@ Partial Class frmMain
         'CalculatorToolStripMenuItem
         '
         Me.CalculatorToolStripMenuItem.Name = "CalculatorToolStripMenuItem"
-        Me.CalculatorToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CalculatorToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
         Me.CalculatorToolStripMenuItem.Text = "Calculator"
         '
         'NotepadToolStripMenuItem
         '
         Me.NotepadToolStripMenuItem.Name = "NotepadToolStripMenuItem"
-        Me.NotepadToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.NotepadToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
         Me.NotepadToolStripMenuItem.Text = "Notepad"
         '
         'TaskManagerToolStripMenuItem
         '
         Me.TaskManagerToolStripMenuItem.Name = "TaskManagerToolStripMenuItem"
-        Me.TaskManagerToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.TaskManagerToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
         Me.TaskManagerToolStripMenuItem.Text = "Task Manager"
         '
         'MSWordToolStripMenuItem
         '
         Me.MSWordToolStripMenuItem.Name = "MSWordToolStripMenuItem"
-        Me.MSWordToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MSWordToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
         Me.MSWordToolStripMenuItem.Text = "MS Word"
         '
         'WordpadToolStripMenuItem
         '
         Me.WordpadToolStripMenuItem.Name = "WordpadToolStripMenuItem"
-        Me.WordpadToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.WordpadToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
         Me.WordpadToolStripMenuItem.Text = "Wordpad"
         '
         'SystemInfoToolStripMenuItem
         '
         Me.SystemInfoToolStripMenuItem.Name = "SystemInfoToolStripMenuItem"
-        Me.SystemInfoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SystemInfoToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
         Me.SystemInfoToolStripMenuItem.Text = "System Info"
         '
         'ManageUsersToolStripMenuItem
         '
         Me.ManageUsersToolStripMenuItem.Name = "ManageUsersToolStripMenuItem"
-        Me.ManageUsersToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ManageUsersToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
         Me.ManageUsersToolStripMenuItem.Text = "Manage Users"
         '
         'ManageToolStripMenuItem
         '
         Me.ManageToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BookCategoriesToolStripMenuItem, Me.StudentToolStripMenuItem})
         Me.ManageToolStripMenuItem.Name = "ManageToolStripMenuItem"
-        Me.ManageToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ManageToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
         Me.ManageToolStripMenuItem.Text = "Manage..."
         '
         'BookCategoriesToolStripMenuItem
         '
         Me.BookCategoriesToolStripMenuItem.Name = "BookCategoriesToolStripMenuItem"
-        Me.BookCategoriesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BookCategoriesToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.BookCategoriesToolStripMenuItem.Text = "Book Categories"
+        '
+        'StudentToolStripMenuItem
+        '
+        Me.StudentToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SectionStrandToolStripMenuItem, Me.GradeLevelToolStripMenuItem})
+        Me.StudentToolStripMenuItem.Name = "StudentToolStripMenuItem"
+        Me.StudentToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
+        Me.StudentToolStripMenuItem.Text = "Student..."
+        '
+        'SectionStrandToolStripMenuItem
+        '
+        Me.SectionStrandToolStripMenuItem.Name = "SectionStrandToolStripMenuItem"
+        Me.SectionStrandToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
+        Me.SectionStrandToolStripMenuItem.Text = "Section/Strand"
+        '
+        'GradeLevelToolStripMenuItem
+        '
+        Me.GradeLevelToolStripMenuItem.Name = "GradeLevelToolStripMenuItem"
+        Me.GradeLevelToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
+        Me.GradeLevelToolStripMenuItem.Text = "Grade Level"
         '
         'AboutToolStripMenuItem
         '
@@ -282,40 +300,11 @@ Partial Class frmMain
         Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
         Me.AboutToolStripMenuItem.Text = "About"
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(457, 126)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'StudentToolStripMenuItem
-        '
-        Me.StudentToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SectionStrandToolStripMenuItem, Me.GradeLevelToolStripMenuItem})
-        Me.StudentToolStripMenuItem.Name = "StudentToolStripMenuItem"
-        Me.StudentToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.StudentToolStripMenuItem.Text = "Student..."
-        '
-        'SectionStrandToolStripMenuItem
-        '
-        Me.SectionStrandToolStripMenuItem.Name = "SectionStrandToolStripMenuItem"
-        Me.SectionStrandToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.SectionStrandToolStripMenuItem.Text = "Section/Strand"
-        '
-        'GradeLevelToolStripMenuItem
-        '
-        Me.GradeLevelToolStripMenuItem.Name = "GradeLevelToolStripMenuItem"
-        Me.GradeLevelToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.GradeLevelToolStripMenuItem.Text = "Grade Level"
-        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.MenuStrip2)
         Me.Controls.Add(Me.StatusStrip1)
@@ -365,7 +354,6 @@ Partial Class frmMain
     Friend WithEvents BorrowersToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ManageToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BookCategoriesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Button1 As Button
     Friend WithEvents StudentToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SectionStrandToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GradeLevelToolStripMenuItem As ToolStripMenuItem

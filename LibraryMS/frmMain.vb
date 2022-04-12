@@ -87,9 +87,9 @@ Public Class frmMain
         frmBookCategories.Focus()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Form1.Show()
-    End Sub
+    'Private Sub Button1_Click(sender As Object, e As EventArgs)
+    '    Form1.Show()
+    'End Sub
 
     Private Sub ManageUsersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ManageUsersToolStripMenuItem.Click
         frmUsers.Show()
